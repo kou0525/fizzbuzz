@@ -32,15 +32,15 @@
 
 def fizzbuzz_convert(number):
     if number % 15 == 0:
-        print("Fizz,Buzz")
+        return "FizzBuzz"
     elif number % 5 == 0:
-        print("Buzz")
+        return "Buzz"
     elif number % 3 == 0:
-        print("Fizz")
+        return "Fizz"
     else:
-        print(str(number))
-    return number  # returnが無いとNoneが返ってくるため必要
+        return str(number)
 
 
 for i in range(1, 101):
-    print(fizzbuzz_convert(i))
+    result = fizzbuzz_convert(i)
+    print(result)
