@@ -43,6 +43,6 @@ def fizzbuzz_convert(number):
     return str(number)
 
 
-for i in range(1, 101):
-    result = fizzbuzz_convert(i)
+for number in range(1, 101):
+    result = fizzbuzz_convert(number)
     print(result)
